@@ -19,6 +19,7 @@ class Fuji02Spider(scrapy.Spider):
                 playwright_include_page = True,
                 playwright_page_methods =[
                     PageMethod("click","#thtimeNext > a"),
+                    PageMethod("wait_for_timeout", 10000),
                 ]
             ))
 
